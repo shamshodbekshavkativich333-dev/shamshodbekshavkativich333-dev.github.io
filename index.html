@@ -90,59 +90,148 @@
 
     <!-- Projects Section -->
     <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-gray-800/60">
-        <h2 class="text-2xl md:text-3xl font-bold mb-10 text-blue-400 flex items-center gap-3">
-            <i class="fa-solid fa-folder-open text-xl"></i> Loyihalar va Jamiyat
-        </h2>
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-4">
+            <div>
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-400 flex items-center gap-3">
+                    <i class="fa-solid fa-folder-open text-xl"></i> Loyihalar va Jamiyat
+                </h2>
+                <p class="text-gray-400 text-sm mt-1">Kiberxavfsizlik, dasturlash va hamjamiyat uchun yaratilgan amaliy ishlar</p>
+            </div>
+            <a href="https://github.com/shamshodbekshavkativich333-dev" target="_blank" class="text-xs font-semibold bg-gray-900 border border-gray-800 hover:border-blue-500/50 px-4 py-2 rounded-lg text-gray-300 hover:text-white transition inline-flex items-center gap-2 self-start md:self-auto">
+                <i class="fa-brands fa-github text-sm"></i> Barcha reponi ko'rish
+            </a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
             
-            <!-- Project Card 1 -->
-            <div class="bg-gray-900/90 border border-gray-800 p-6 rounded-2xl hover:border-blue-500/60 transition group flex flex-col justify-between">
+            <!-- Project Card 1: Network Security Scanner -->
+            <div class="bg-gray-900/80 border border-gray-800/80 rounded-2xl p-6 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col justify-between group">
                 <div>
-                    <div class="flex justify-between items-start mb-4">
-                        <i class="fa-solid fa-microchip text-2xl text-blue-400"></i>
-                        <a href="https://github.com/shamshodbekshavkativich333-dev" target="_blank" class="text-gray-500 hover:text-white transition">
-                            <i class="fa-brands fa-github text-xl"></i>
-                        </a>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-microchip text-lg"></i>
+                        </div>
+                        <span class="px-2.5 py-1 text-[11px] font-semibold rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                            Open Source
+                        </span>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">Network Security Scanner</h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-                        Tarmoqdagi ochiq portlar va xavfsizlik zaifliklarini avtomatik aniqlash uchun Python hamda Linux tarmoq utilitalari asosida yozilgan maxsus skript.
+
+                    <h3 class="text-lg font-bold text-gray-100 group-hover:text-blue-400 transition mb-2">
+                        Network Security Scanner
+                    </h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                        Tarmoqdagi ochiq portlar va xavfsizlik zaifliklarini avtomatik aniqlash uchun Python hamda Linux tarmoq utilitalari asosida yozilgan skript.
                     </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-gray-300">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-blue-400 text-[10px]"></i>
+                            <span>Ochiq portlar va xizmatlarni skanerlash</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-blue-400 text-[10px]"></i>
+                            <span>Tizim zaifliklarini tezkor tahlil qilish</span>
+                        </li>
+                    </ul>
                 </div>
+
                 <div>
-                    <div class="flex flex-wrap gap-2 mb-4 text-xs font-medium">
-                        <span class="bg-blue-950/80 text-blue-300 border border-blue-800/40 px-3 py-1 rounded-md">Python</span>
-                        <span class="bg-blue-950/80 text-blue-300 border border-blue-800/40 px-3 py-1 rounded-md">Linux</span>
-                        <span class="bg-blue-950/80 text-blue-300 border border-blue-800/40 px-3 py-1 rounded-md">Networking</span>
+                    <div class="flex flex-wrap gap-1.5 mb-5">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-gray-800 text-gray-300 rounded-md">Python 3</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-gray-800 text-gray-300 rounded-md">Linux</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-gray-800 text-gray-300 rounded-md">Networking</span>
                     </div>
-                    <a href="https://github.com/shamshodbekshavkativich333-dev" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-semibold inline-flex items-center gap-1">
-                        Kodlarni Ko'rish <i class="fa-solid fa-arrow-right text-xs"></i>
+                    <a href="https://github.com/shamshodbekshavkativich333-dev" target="_blank" class="w-full py-2.5 px-4 bg-blue-600/10 hover:bg-blue-600 border border-blue-500/20 hover:border-blue-600 text-blue-400 hover:text-white text-xs font-semibold rounded-xl transition flex items-center justify-center gap-2">
+                        <span>Kodlarni Ko'rish</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Project Card 2 -->
-            <div class="bg-gray-900/90 border border-gray-800 p-6 rounded-2xl hover:border-blue-500/60 transition group flex flex-col justify-between">
+            <!-- Project Card 2: CyberGuard Uzbekistan -->
+            <div class="bg-gray-900/80 border border-gray-800/80 rounded-2xl p-6 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 flex flex-col justify-between group">
                 <div>
-                    <div class="flex justify-between items-start mb-4">
-                        <i class="fa-solid fa-shield-cat text-2xl text-indigo-400"></i>
-                        <a href="https://t.me/CyberGuardUzbekistan" target="_blank" class="text-gray-500 hover:text-white transition">
-                            <i class="fa-brands fa-telegram text-xl"></i>
-                        </a>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-shield-cat text-lg"></i>
+                        </div>
+                        <span class="px-2.5 py-1 text-[11px] font-semibold rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                            Telegram Community
+                        </span>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">CyberGuard Uzbekistan</h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-                        Kiberxavfsizlik, axborot xavfsizligi madaniyati va IT yo'nalishidagi tahliliy maqolalar, yangiliklar hamda xavfsizlik bo'yicha amaliy tavsiyalar kanali.
+
+                    <h3 class="text-lg font-bold text-gray-100 group-hover:text-indigo-400 transition mb-2">
+                        CyberGuard Uzbekistan
+                    </h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                        Kiberxavfsizlik, axborot xavfsizligi madaniyati va IT yo'nalishidagi tahliliy maqolalar hamda xavfsizlik tavsiyalari kanali.
                     </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-gray-300">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-indigo-400 text-[10px]"></i>
+                            <span>Dolzarb kiber-tahdidlar va yangiliklar</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-indigo-400 text-[10px]"></i>
+                            <span>Amaliy tavsiyalar va xavfsizlik qo'llanmalari</span>
+                        </li>
+                    </ul>
                 </div>
+
                 <div>
-                    <div class="flex flex-wrap gap-2 mb-4 text-xs font-medium">
-                        <span class="bg-indigo-950/80 text-indigo-300 border border-indigo-800/40 px-3 py-1 rounded-md">Cybersecurity</span>
-                        <span class="bg-indigo-950/80 text-indigo-300 border border-indigo-800/40 px-3 py-1 rounded-md">Community</span>
-                        <span class="bg-indigo-950/80 text-indigo-300 border border-indigo-800/40 px-3 py-1 rounded-md">Research</span>
+                    <div class="flex flex-wrap gap-1.5 mb-5">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-gray-800 text-gray-300 rounded-md">Cybersecurity</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-gray-800 text-gray-300 rounded-md">Community</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-gray-800 text-gray-300 rounded-md">Research</span>
                     </div>
-                    <a href="https://t.me/CyberGuardUzbekistan" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-semibold inline-flex items-center gap-1">
-                        Kanalga O'tish <i class="fa-solid fa-arrow-right text-xs"></i>
+                    <a href="https://t.me/CyberGuardUzbekistan" target="_blank" class="w-full py-2.5 px-4 bg-indigo-600/10 hover:bg-indigo-600 border border-indigo-500/20 hover:border-indigo-600 text-indigo-400 hover:text-white text-xs font-semibold rounded-xl transition flex items-center justify-center gap-2">
+                        <span>Kanalga O'tish</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Card 3: Personal Cybersecurity Hub & Portfolio -->
+            <div class="bg-gray-900/80 border border-gray-800/80 rounded-2xl p-6 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-laptop-code text-lg"></i>
+                        </div>
+                        <span class="px-2.5 py-1 text-[11px] font-semibold rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                            Live Project
+                        </span>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-gray-100 group-hover:text-purple-400 transition mb-2">
+                        Personal Portfolio & Lab
+                    </h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                        Texnik ko'nikmalar, kiberxavfsizlik tajribalari hamda shaxsiy IT loyihalarni vizual taqdim etuvchi zamonaviy veb-platforma.
+                    </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-gray-300">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-purple-400 text-[10px]"></i>
+                            <span>GitHub Pages orqali avtomatlashtirilgan deployment</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-purple-400 text-[10px]"></i>
+                            <span>Moslashuvchan (Responsive) Tailwind CSS dizayn</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-5">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-gray-800 text-gray-300 rounded-md">HTML5</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-gray-800 text-gray-300 rounded-md">Tailwind CSS</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-gray-800 text-gray-300 rounded-md">GitHub Pages</span>
+                    </div>
+                    <a href="https://github.com/shamshodbekshavkativich333-dev/shamshodbekshavkativich333-dev.github.io" target="_blank" class="w-full py-2.5 px-4 bg-purple-600/10 hover:bg-purple-600 border border-purple-500/20 hover:border-purple-600 text-purple-400 hover:text-white text-xs font-semibold rounded-xl transition flex items-center justify-center gap-2">
+                        <span>Source Code</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
                     </a>
                 </div>
             </div>
