@@ -1,79 +1,176 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="uz" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Kiberxavfsizlik va IT</title>
+    <title>Shamshodbek | Cybersecurity & IT Portfolio</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans leading-normal tracking-normal">
+<body class="bg-gray-950 text-gray-100 font-sans leading-normal tracking-normal selection:bg-blue-500 selection:text-white">
 
     <!-- Header / Navigation -->
-    <nav class="max-w-4xl mx-auto p-6 flex justify-between items-center">
-        <h1 class="text-xl font-bold text-blue-400">Portfolio</h1>
-        <div class="space-x-4">
-            <a href="#about" class="hover:text-blue-400 transition">Haqimda</a>
-            <a href="#projects" class="hover:text-blue-400 transition">Loyihalar</a>
-            <a href="#contact" class="hover:text-blue-400 transition">Aloqa</a>
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-gray-950/80 border-b border-gray-800/60">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black tracking-wider bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
+                SHAMSHODBEK<span class="text-blue-500">.</span>
+            </a>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-blue-400 transition">Haqimda</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Ko'nikmalar</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Loyihalar</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Aloqa</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="about" class="max-w-4xl mx-auto px-6 py-12 text-center border-b border-gray-800">
-        <h2 class="text-4xl font-extrabold mb-4">Salom, men Shamshodbekman</h2>
-        <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-6">
-            Kiberxavfsizlik, tizimlar xavfsizligi va dasturiy ta'minotni rivojlantirishga qiziquvchi izlanuvchiman. Muammolarga mantiqiy va xavfsiz yechimlar topish ustida ishlayman.
+    <section id="about" class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-800/50 text-blue-400 text-xs font-semibold mb-6">
+            <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> Kiberxavfsizlik va Dasturlash Izlanuvchisi
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight leading-tight">
+            Salom, men <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">Shamshodbekman</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+            Kiberxavfsizlik, operatsion tizimlar va tarmoq xavfsizligi bo'yicha doimiy izlanishdaman. Muammolarga mantiqiy va xavfsiz texnik yechimlar yaratish ustida ishlayman.
         </p>
-        <div class="flex justify-center gap-4">
-            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-5 py-2.5 rounded-lg font-semibold transition">Loyihalarni Ko'rish</a>
-            <a href="https://github.com/shamshodbekshavkativich333-dev" target="_blank" class="bg-gray-800 hover:bg-gray-700 border border-gray-700 px-5 py-2.5 rounded-lg font-semibold transition">GitHub Profil</a>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold transition shadow-lg shadow-blue-600/25 flex items-center gap-2">
+                <i class="fa-solid fa-code"></i> Loyihalarni Ko'rish
+            </a>
+            <a href="https://github.com/shamshodbekshavkativich333-dev" target="_blank" class="bg-gray-900 hover:bg-gray-800 border border-gray-700 px-6 py-3 rounded-xl font-semibold transition flex items-center gap-2">
+                <i class="fa-brands fa-github text-lg"></i> GitHub Profil
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-5xl mx-auto px-6 py-16 border-t border-gray-800/60">
+        <h2 class="text-2xl md:text-3xl font-bold mb-10 text-blue-400 flex items-center gap-3">
+            <i class="fa-solid fa-layer-group text-xl"></i> Texnik Ko'nikmalar
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <div class="bg-gray-900/80 border border-gray-800 p-4 rounded-xl flex items-center gap-3 hover:border-blue-500/50 transition">
+                <i class="fa-brands fa-linux text-2xl text-yellow-500"></i>
+                <span class="font-medium text-sm">Linux / Unix Systems</span>
+            </div>
+            <div class="bg-gray-900/80 border border-gray-800 p-4 rounded-xl flex items-center gap-3 hover:border-blue-500/50 transition">
+                <i class="fa-brands fa-python text-2xl text-blue-400"></i>
+                <span class="font-medium text-sm">Python Development</span>
+            </div>
+            <div class="bg-gray-900/80 border border-gray-800 p-4 rounded-xl flex items-center gap-3 hover:border-blue-500/50 transition">
+                <i class="fa-solid fa-shield-halved text-2xl text-green-400"></i>
+                <span class="font-medium text-sm">Cybersecurity & Audit</span>
+            </div>
+            <div class="bg-gray-900/80 border border-gray-800 p-4 rounded-xl flex items-center gap-3 hover:border-blue-500/50 transition">
+                <i class="fa-solid fa-network-wired text-2xl text-purple-400"></i>
+                <span class="font-medium text-sm">Network Administration</span>
+            </div>
+            <div class="bg-gray-900/80 border border-gray-800 p-4 rounded-xl flex items-center gap-3 hover:border-blue-500/50 transition">
+                <i class="fa-brands fa-git-alt text-2xl text-orange-500"></i>
+                <span class="font-medium text-sm">Git & GitHub</span>
+            </div>
+            <div class="bg-gray-900/80 border border-gray-800 p-4 rounded-xl flex items-center gap-3 hover:border-blue-500/50 transition">
+                <i class="fa-brands fa-windows text-2xl text-cyan-400"></i>
+                <span class="font-medium text-sm">Windows Systems</span>
+            </div>
+            <div class="bg-gray-900/80 border border-gray-800 p-4 rounded-xl flex items-center gap-3 hover:border-blue-500/50 transition">
+                <i class="fa-solid fa-terminal text-2xl text-emerald-400"></i>
+                <span class="font-medium text-sm">Bash & Shell Scripting</span>
+            </div>
+            <div class="bg-gray-900/80 border border-gray-800 p-4 rounded-xl flex items-center gap-3 hover:border-blue-500/50 transition">
+                <i class="fa-solid fa-language text-2xl text-indigo-400"></i>
+                <span class="font-medium text-sm">English Academic</span>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="max-w-4xl mx-auto px-6 py-12 border-b border-gray-800">
-        <h3 class="text-2xl font-bold mb-8 text-blue-400">Loyihalarim</h3>
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-gray-800/60">
+        <h2 class="text-2xl md:text-3xl font-bold mb-10 text-blue-400 flex items-center gap-3">
+            <i class="fa-solid fa-folder-open text-xl"></i> Loyihalar va Jamiyat
+        </h2>
         <div class="grid md:grid-cols-2 gap-6">
             
             <!-- Project Card 1 -->
-            <div class="bg-gray-800 border border-gray-700 p-6 rounded-xl hover:border-blue-500 transition">
-                <h4 class="text-xl font-bold mb-2">Network Security Scanner</h4>
-                <p class="text-gray-400 text-sm mb-4">
-                    Tarmoqdagi ochiq portlar va zaifliklarni tezkor aniqlash uchun Python va Linux utilitalari yordamida yozilgan skript.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4 text-xs">
-                    <span class="bg-blue-900 text-blue-300 px-2.5 py-1 rounded">Python</span>
-                    <span class="bg-blue-900 text-blue-300 px-2.5 py-1 rounded">Linux</span>
-                    <span class="bg-blue-900 text-blue-300 px-2.5 py-1 rounded">Networking</span>
+            <div class="bg-gray-900/90 border border-gray-800 p-6 rounded-2xl hover:border-blue-500/60 transition group flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fa-solid fa-microchip text-2xl text-blue-400"></i>
+                        <a href="https://github.com/shamshodbekshavkativich333-dev" target="_blank" class="text-gray-500 hover:text-white transition">
+                            <i class="fa-brands fa-github text-xl"></i>
+                        </a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">Network Security Scanner</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        Tarmoqdagi ochiq portlar va xavfsizlik zaifliklarini avtomatik aniqlash uchun Python hamda Linux tarmoq utilitalari asosida yozilgan maxsus skript.
+                    </p>
                 </div>
-                <a href="#" class="text-blue-400 hover:underline text-sm font-semibold">Source Code &rarr;</a>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4 text-xs font-medium">
+                        <span class="bg-blue-950/80 text-blue-300 border border-blue-800/40 px-3 py-1 rounded-md">Python</span>
+                        <span class="bg-blue-950/80 text-blue-300 border border-blue-800/40 px-3 py-1 rounded-md">Linux</span>
+                        <span class="bg-blue-950/80 text-blue-300 border border-blue-800/40 px-3 py-1 rounded-md">Networking</span>
+                    </div>
+                    <a href="https://github.com/shamshodbekshavkativich333-dev" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-semibold inline-flex items-center gap-1">
+                        Kodlarni Ko'rish <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
             </div>
 
             <!-- Project Card 2 -->
-            <div class="bg-gray-800 border border-gray-700 p-6 rounded-xl hover:border-blue-500 transition">
-                <h4 class="text-xl font-bold mb-2">Cyber Guard Channel & Blog</h4>
-                <p class="text-gray-400 text-sm mb-4">
-                    Kiberxavfsizlik, raqamli gipotezalar va axborot xavfsizligi bo'yicha tahliliy va amaliy maqolalar jamlanmasi.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4 text-xs">
-                    <span class="bg-blue-900 text-blue-300 px-2.5 py-1 rounded">Cybersecurity</span>
-                    <span class="bg-blue-900 text-blue-300 px-2.5 py-1 rounded">Research</span>
+            <div class="bg-gray-900/90 border border-gray-800 p-6 rounded-2xl hover:border-blue-500/60 transition group flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fa-solid fa-shield-cat text-2xl text-indigo-400"></i>
+                        <a href="https://t.me/CyberGuard_Uzbekistan" target="_blank" class="text-gray-500 hover:text-white transition">
+                            <i class="fa-brands fa-telegram text-xl"></i>
+                        </a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">CyberGuard Uzbekistan</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        Kiberxavfsizlik, axborot xavfsizligi madaniyati va IT yo'nalishidagi tahliliy maqolalar, yangiliklar hamda xavfsizlik bo'yicha amaliy tavsiyalar kanali.
+                    </p>
                 </div>
-                <a href="#" class="text-blue-400 hover:underline text-sm font-semibold">Batafsil &rarr;</a>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4 text-xs font-medium">
+                        <span class="bg-indigo-950/80 text-indigo-300 border border-indigo-800/40 px-3 py-1 rounded-md">Cybersecurity</span>
+                        <span class="bg-indigo-950/80 text-indigo-300 border border-indigo-800/40 px-3 py-1 rounded-md">Community</span>
+                        <span class="bg-indigo-950/80 text-indigo-300 border border-indigo-800/40 px-3 py-1 rounded-md">Research</span>
+                    </div>
+                    <a href="https://t.me/CyberGuard_Uzbekistan" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-semibold inline-flex items-center gap-1">
+                        Kanalga O'tish <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
             </div>
 
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="max-w-4xl mx-auto px-6 py-12 text-center">
-        <h3 class="text-2xl font-bold mb-4 text-blue-400">Bog'lanish</h3>
-        <p class="text-gray-400 mb-6">Savollar yoki hamkorlik loyihalari bo'yicha bog'lanishingiz mumkin.</p>
-        <a href="mailto:shamshodbekshavkativich333@gmail.com" class="text-lg text-blue-400 font-semibold hover:underline">shamshodbekshavkativich333@gmail.com</a>
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-16 border-t border-gray-800/60 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-blue-400">Bog'lanish</h2>
+        <p class="text-gray-400 max-w-lg mx-auto mb-8">
+            Akademik, loyihaviy yoki kiberxavfsizlik yo'nalishidagi taklif va savollar bo'yicha aloqaga chiqishingiz mumkin.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="mailto:shamshodbekshavkativich333@gmail.com" class="bg-gray-900 border border-gray-800 hover:border-blue-500 px-5 py-3 rounded-xl font-medium transition flex items-center gap-2">
+                <i class="fa-solid fa-envelope text-blue-400"></i> Email
+            </a>
+            <a href="https://t.me/CyberGuard_Uzbekistan" target="_blank" class="bg-gray-900 border border-gray-800 hover:border-blue-500 px-5 py-3 rounded-xl font-medium transition flex items-center gap-2">
+                <i class="fa-brands fa-telegram text-sky-400"></i> Telegram
+            </a>
+            <a href="https://github.com/shamshodbekshavkativich333-dev" target="_blank" class="bg-gray-900 border border-gray-800 hover:border-blue-500 px-5 py-3 rounded-xl font-medium transition flex items-center gap-2">
+                <i class="fa-brands fa-github text-gray-300"></i> GitHub
+            </a>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-800">
+    <footer class="text-center py-8 text-gray-500 text-sm border-t border-gray-800/60">
         &copy; 2026 Shamshodbek. Barcha huquqlar himoyalangan.
     </footer>
 
